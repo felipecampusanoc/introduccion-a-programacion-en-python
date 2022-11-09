@@ -1,6 +1,7 @@
 ** Introducción a Programación en Python **
 Video: https://www.youtube.com/watch?v=DLikpfc64cA
-______________________________________________________
+__________________________________________________________
+__________________________________________________________
 1.- Python se utiliza en:
 - Ciencia de datos
 - Desarrollo web
@@ -9,7 +10,8 @@ ______________________________________________________
 - Enseñanza de programación
 - Desarrollo de juegos
 - Medicina
-______________________________________________________
+__________________________________________________________
+__________________________________________________________
 2. - Idle
 This PC > Local Disk(C:) > Users > estef > AppData >
 Local > Programs > Python > Python39 > Lib > idlelib >
@@ -19,7 +21,8 @@ idle (Python File) = Abre una consola
 print("Hola mundo");
 
 2.2.- Guardar archivo: Extensión .py
-______________________________________________________
+__________________________________________________________
+__________________________________________________________
 3.- Variable: Nombre que se le asigna a un valor en el
 programa, ese nombre representa un espacio en memoria.
 Cuando se crea una variable basicamente se crea un 
@@ -41,7 +44,7 @@ $* Idle
 >>> num = 15
 >>> num
 15
-
+----------------------------------------------------------
 3.1.- Reglas para nombrar variables
 Los nombres de variables deben empezar con una letra o
 con un guión bajo.
@@ -58,7 +61,8 @@ $* Idle
 >>> EDAD = 15
 >>> edad 
 24
-______________________________________________________
+__________________________________________________________
+__________________________________________________________
 4.- Tipos de datos
 4.1.- Enteros:
 Números que no tienen decimales.
@@ -77,7 +81,7 @@ tipo de dato numerico.
 <class 'int'>
 
 No hay limite para el numero maximo.
-
+----------------------------------------------------------
 4.1.1.- Números en coma flotante:
 Números que tienen decimales.
 - Positivos
@@ -89,14 +93,14 @@ Números que tienen decimales.
 <class 'float'>
 >>> type(4.0)>
 <class 'float'>
-
+----------------------------------------------------------
 4.1.2.- Booleanos(True|False): Los valores booleanos 
 son importantes para expresiones condicionales.
 >>> type(true)>
 <class 'bool'>
 >>> type(false)>
 <class 'bool'>
-
+----------------------------------------------------------
 4.2.- Cadenas de caracteres(String): Secuencia de
 caracteres encerrados entre comillas y usados para
 representar textor en el programa.
@@ -108,20 +112,20 @@ $* idle: Ejemplo:
 
 >>> type("Python")>
 <class 'str'>
-
+----------------------------------------------------------
 4.2.1.- Diferencias entre entero y caracteres
 >>> type(5)>
 <class 'int'>
 >>> type("5")>
 <class 'str'>
-
+----------------------------------------------------------
 4.2.2.- ¿Cuantos caracteres tiene una cadena?
 $* idle: Ejemplo:
 >>> len("A")
 1
 >>> len("Python")
 6
-
+----------------------------------------------------------
 4.2.3.- Estructura interna de la cadena
 
 Indice de la cadena de caracteres"Python"
@@ -151,7 +155,7 @@ Sintaxis: <cadena>[<índice>]
 'o'
 >>> palabra[5]
 'n'
-
+----------------------------------------------------------
 4.2.4.- Rebanado(Slicing): Obtener una rebanada
 (porción) de una cadena de caracteres.
 
@@ -171,12 +175,12 @@ $* idle: Ejemplo:
 >>> palabra = "Python"
 >>> palabra[1:6:2]
 'yhn'
-
+----------------------------------------------------------
 4.2.5.- Métodos de Cadena de Caracteres: Operaciones
 comunes que vienen implementadas en Python
 
 sintaxis: <cadena>.<método>(<valores>)
-
+----------------------------------------------------------
 4.2.5.1.- Capitalize: Retorna una copia de la cadena
 con el primer caracter en mayuscula y el resto en
 minuscula.
@@ -198,7 +202,7 @@ $* Métodos importantes
 - isupper
 - lower
 - upper
-
+----------------------------------------------------------
 4.3.- Recibiendo datos del usuario: Se utiliza la
 función input()
 
@@ -216,8 +220,9 @@ caracteres.
 Transformar un numero string en entero:
 
 num = int(input("ingrese un Número: ")) 
-______________________________________________________
-4.4.- Operadoradores 
+_________________________________________________________
+_________________________________________________________
+5.- Operadoradores 
 
 Operador: Símbolos que denotan una operación.
 Operandos: Valores con los cuales se ejecuta la 
@@ -227,17 +232,17 @@ Operador + Operandos = Expresión
 
 Expresión: Combinación de valores, variables, y
 operadores que al ser evaluados resultan en un valor.
-
+----------------------------------------------------------
 Las expresiones se evalúan de izquierda a derecha.
 Excepto cuando ciertos operadores tienen mayor 
 "importancia" para el orden de las operaciones.
-
+----------------------------------------------------------
 Operadores:
 - Aritméticos
 - Lógicos
 - De Asignación
 - Relacionales
-
+----------------------------------------------------------
 Operadores Aritméticos: Nos permiten realizar 
 operaciones aritmética en el programa.
 - Suma
@@ -247,8 +252,8 @@ operaciones aritmética en el programa.
 - División Entera
 - Exponente
 - Módulo
-
-4.4.1.- Operador +
+----------------------------------------------------------
+5.1.- Operador +
 >>> 5 + 6
 11
 >>> 2 + 3
@@ -257,12 +262,12 @@ operaciones aritmética en el programa.
 14
 >>> 3.4. + 5.6
 9.0
-
-4.4.2.- Concatenar
+----------------------------------------------------------
+5.2.- Concatenar
 >>> "Hola" + " " + "Mundo"
 'Hola Mundo'
-
-4.4.3.- Operador -
+----------------------------------------------------------
+5.3.- Operador -
 >>> 10 - 4
 6
 >>> 4 - 8
@@ -273,8 +278,8 @@ operaciones aritmética en el programa.
 -2.19999999999999997
 >>> 2 - 8.9
 -6.9
-
-4.4.4.- Operador *
+----------------------------------------------------------
+5.4.- Operador *
 >>> 5 * 6
 30
 >>> 4 * 0
@@ -285,8 +290,8 @@ operaciones aritmética en el programa.
 -40
 >>> 4.5. * 7.9
 35.550000000000004
-
-4.4.5.- Operador /
+----------------------------------------------------------
+5.5.- Operador /
 >>> 15 / 5
 3.0
 >>> 15 / 8
@@ -297,8 +302,8 @@ operaciones aritmética en el programa.
 0.888888888888
 >>> 4.2 / 4.1
 1.024390243902439
-
-4.4.6.- División entera
+---------------------------------------------------------
+5.6.- División entera
 >>> 15 // 5
 3
 >>> 3 // 5
@@ -319,8 +324,8 @@ Ejemplo entre // y /
 Nota: Una de las aplicaciones del operador // es en el
 algortimo de búsqueda binaria que nos permite encontrar
 un valor en una secuencia de forma muy eficiente.
-
-4.4.7.- Operador de exponenciación
+---------------------------------------------------------
+5.7.- Operador de exponenciación
 >>> 5 ** 3
 125
 >>> 3 ** 8
@@ -333,8 +338,8 @@ un valor en una secuencia de forma muy eficiente.
 4.0
 >>> 5 ** 0
 1
-
-4.4.8.- Operador módulo(%): Retorna el resto de la
+----------------------------------------------------------
+5.8.- Operador módulo(%): Retorna el resto de la
 división. Es comunmente utilizado para verificar si un
 número es par o impar.
 
@@ -348,7 +353,405 @@ número es par o impar.
 4
 >>> 18 % 4
 2
+----------------------------------------------------------
+5.9.- Determinar orden en las operaciones.
 
-4.2.9.- Determinar orden en las operaciones.
+PEMDAS = Acronimo
 
-1:21:14
+P = Paréntesis
+E = Exponentes
+M = Multiplicacion
+D = Division
+A = Suma(Adicion)
+S = Resta(Sustraccion)
+----------------------------------------------------------
+5.10.- Operadores lógicos: Nos permite trabajar con
+valores booleanos (True y False).
+
+Existe tres operadores logicos que se pueden utilizar
+en Python:
+
+> Operador logico and: Evalua si el operando izquierdo
+y el derecho son verdaderos.
+
+Tabla logica del operador and
+------------------------
+X    | Y     | X and Y |
+------------------------
+True | True  | True    |
+True | False | False   |
+False| True  | False   |
+False| False | False   |
+------------------------
+
+Ejemplo:
+	T	   F
+>>> (5 < 6) and (6 > 8)
+False
+
+$$> Operador logico or:
+------------------------
+X    | Y     | X and Y |
+------------------------
+True | True  | True    |
+True | False | True    |
+False| True  | True    |
+False| False | False   |
+------------------------
+
+Ejemplo:
+       T          F
+>>> (5 < 6) or (6 > 8)
+True
+
+$$> Operador logico not:
+---------------
+X     | not X |
+---------------
+True  | False | 
+False | False | 
+---------------
+>>> not True
+False
+>>> not False
+True
+
+$$> Prioridad:
+
+- not (Mayor)
+- and (Medio)
+- or  (Menor)
+
+$$> Operadores relacionales: Son utilizados para 
+comparar valores y retornan un valor booleano.
+
+>  (Mayor que)
+>= (Mayor igual que)
+<  (Menor que)
+<= (Menor igual que)
+== (Igual que)
+!= (No igual a)
+
+Ejemplo:
+
+>>> 5 > 6
+False
+>>> 10 > 3
+True
+
+>>> 5 > 5
+False
+>>> 5 >= 5
+True
+
+>>> 5 < 6
+True
+>>> 10 < 3
+False
+
+>>> 3 < 3
+False
+>>> 3 <= 3
+True
+
+>>> 8 == 8
+True
+>>> 8 != 8
+False
+
+>>> "Hola" == "Hola"
+True
+>>> "Hola" == "H"
+False
+
+>>> "ABC" < "A"
+False
+>>> "A" < "B"
+True
+>>> "B" > "A"
+True
+>>> "C" != "D"
+True
+>>> "Noris" == "Gino"
+False
+----------------------------------------------------------
+5.11.- Operadores de Asignación: Son utilizados para
+asignar valores a las variables del programa.
+
+=
+-=
+/=
+//=
++=
+*=
+**=
+%=
+
+Ejemplo:
+
+>>> edad = 56
+>>> edad += 3
+>>> edad 
+59
+>>> edad -= 2
+>>> edad 
+57
+>>> edad *= 3
+>>> edad
+171
+>>> edad /= 2
+>>> edad
+85.5
+__________________________________________________________
+__________________________________________________________
+6.- Sentencias condicionales: Instrucción o un 
+grupo de instrucciones cuya ejecución depende del
+valor de una condición booleana.
+
+$$> Sintaxis: <IF> Puede haber mas de una clausula
+'elif', pero solo una clausula 'else'.
+
+if <condición>:
+	# Código
+elif <condicion2>:
+	# Código
+else:
+	# Código
+
+$$> Ejemplo:
+
+temp = 15
+
+if temp < 25:
+	print("Muy Frío")
+elif temp < 25:
+	print("Frío")
+else:
+	print("Calor")
+__________________________________________________________
+__________________________________________________________
+7.- Comentario: Texto que se escribe en el programa
+para facilitar su comprensión. 
+
+Proposito: Describir la logica de ciertas partes del
+codigo a otros programadores que lean el programa.
+
+# Comentario
+__________________________________________________________
+__________________________________________________________
+8.- Listas: Estructura de datos utilizada para
+almacenar multiples valores en secuencia.
+
+Secuencias ordenadas: Cada uno de sus elementos estan
+puestos en un orden especifico, pueden ser numeros o
+caracteres.
+
+[1, 2, 3, 4]
+["a", "b", "c"]
+
+Indices:
+["a", "b", "c"]
+[0]   [1]   [2]
+
+Caracteristicas:
+- Secuencia ordenada de valores.
+- Puede contener valores de cualquier tipo.
+- Puede contener valores de distintos tipos.
+- Cada posiciones en la lista esta asociada a un entero
+llamado "indice".
+- Es mutable. Puede ser modificada.
+----------------------------------------------------------
+8.1.- Acceder a un elemento: Para acceder a un elemento
+de la lista, usamos su indice correspondiente.
+
+Sintaxis: <lista>[<indice>]
+
+["a", "b", "c", "d"]
+[0]   [1]   [2]  [3]
+
+Ejemplo:
+>>> letras = ["a", "b", "c", "d"] 
+>>> letras[0]
+'a'
+>>> letras[1]
+'b'
+>>> letras[2]
+'c'
+>>> letras[3]
+'d'
+----------------------------------------------------------
+8.2.- Agregar un elemento:
+
+1)  Al final de la lista
+<lista>.append(<elem>)
+
+>>> nums = [1, 2, 3, 4]
+>>> nums.append(5)
+>>> nums
+[1, 2, 3, 4, 5]
+
+2) En un indice especifico
+<lista>.insert(<indice>, <elem>)
+>>> nums = [1, 2, 3, 4, 5]
+>>> nums.insert(0, 6)
+>>> nums
+[6, 1, 2, 3, 4, 5]
+----------------------------------------------------------
+8.3.- Remover un elemento: La primera ocurrencia sera
+removida.
+<lista>.remove(<elem>)
+>>> a = [1, 2, 3, 4, 5, 4]
+>>> a.remove(4)
+>>> a
+[1, 2, 3, 5, 4]
+----------------------------------------------------------
+8.4.- Encontrar un elemento:
+Sintaxis: <elem> in <lista>
+>>> vocales = ['a', 'e', 'i', 'o', 'u']
+>>> 'a' in vocales
+True
+>>> 'z' in vocales
+False
+
+$$> Metodo .index(<elem>): Retorna el indice de la primera
+ocurrencia del elemento en la lista. Si no se encuentra el
+elemento, ocurre un error.
+
+Sintaxis: <lista>.index(<elem>)
+Ejemplo:
+>>> vocales = ['a', 'e', 'i', 'o', 'u']
+>>> vocales.index(i)
+2
+----------------------------------------------------------
+8.5.- Cambiar un elemento: Las listas son mutables,
+pueden ser cambiadas. Sus elementos pueden ser modificados.
+
+Sintaxis: <lista>[<indice>] = <nuevo_valor>
+>>> nums = [1, 2, 3, 4, 5]
+>>> nums[0] = -8
+>>> nums
+[-8, 2, 3, 4, 5]
+
+$$> Métodos de las listas: Operaciones comunes de listas
+que ya estan implementadas en Python.
+<lista>.<método>(<parametros>)
+
+Métodos importantes de listas:
+- .count(<elem>)
+- .extend(<lista>)
+- .pop()
+- .reverse()
+- .sort()
+__________________________________________________________
+__________________________________________________________
+9.- Tuplas: Estructura de datos inmutable que contiene
+una secuencia ordenada de elementos.
+
+Secuencia ordenada:
+("a", "b", "c")
+[0]   [1]   [2]
+
+Caracteristicas:
+- Secuencua ordenada de valores.
+- Puede contener valores de cualquier tipo de datos.
+- Puede contener valores de distintos tipos de datos.
+- Cada posicion de la tupla se identifica con un entero
+denominado "indice".
+- Es inmutable. No puede ser modificada.
+
+Inmutable = No puede cambiar
+----------------------------------------------------------
+9.1.- Acceder a un elemento
+Secuencia ordenada:
+("a", "b", "c")
+[0]   [1]   [2]
+
+>>> letras[0]
+'A'
+>>> letras[1]
+'B'
+>>> letras[2]
+'C'
+----------------------------------------------------------
+9.2.- Encontrar un elemento: <elem> in <tupla>
+>>> letras = ("a", "b", "c", "d")
+>>> "a" in letras
+True
+>>> "b" in letras
+True
+>>> "z" in letras
+False
+>>> "x" in letras
+False
+
+<tupla>.index(<elem>)
+>>> nums = (3, 5, 2, 8, 4, 6, 3, 2)
+>>> nums.count(4)
+1
+__________________________________________________________
+__________________________________________________________
+10.- Diccionarios: Colección de pares clave-valor.
+
+Par Clave-Valor
+Clave	  Valor
+{  "A"  :  45  ,  "B"  :  30  }
+
+Caracteristicas:
+- Coleccion de Pares Clave-Valor.
+- Las claves deben ser unicas e inmutables.
+- Los valores asociados pueden ser de cualquier tipo.
+- La clave se usa para acceder a su valor asociado.
+- Los pares clave-valor pueden ser modificados, añadidos,
+y eliminados.
+----------------------------------------------------------
+10.1.- Acceder a un Valor:
+Clave -----> Valor
+<diccionario>[<clave>]
+
+1) Primera forma
+>>> edades = {"Gino": 15, "Nora": 45}
+>>> edades["Gino"]
+15
+>>> edades["Nora"]
+45
+
+2) Segunda forma
+>>> edades = {"Gino": 15, "Nora": 45}
+>>> edades.get["Gino"]
+15
+----------------------------------------------------------
+10.2.- Añadir modificar:
+<diccionario>[<clave>] = <nuevo_valor>
+
+>>> edades = {"Gino": 15, "Nora": 45}
+>>> edades["Talina"] = 67
+>>> edades
+{'Gino': 15, 'Nora': 45, 'Talina': 67}
+----------------------------------------------------------
+10.3.- Remover: del <dicc>[<clave>]
+>>> edades = {"Gino": 15, "Nora": 45}
+>>> del edades["Gino"]
+>>> edades
+{'Nora': 45}
+----------------------------------------------------------
+10.4.- Revisar existencia:
+<elem> in <dicc>
+
+>>> edades = {"Gino": 15, "Nora": 45}
+>>> "Gino" in edades
+True
+>>> "Emily" in edades
+False
+>>> "Nora" in edades
+True
+__________________________________________________________
+__________________________________________________________
+11.- Documentación: 
+
+www.python.org > Documentation > Python Docs
+__________________________________________________________
+__________________________________________________________
+12.- Ciclos For
+
+2:37:29
+ 

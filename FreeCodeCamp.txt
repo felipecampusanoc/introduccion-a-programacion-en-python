@@ -1,6 +1,354 @@
 ** Introducción a Programación en Python **
 Video: https://www.youtube.com/watch?v=DLikpfc64cA
-___________________________________________________
+______________________________________________________
+1.- Python se utiliza en:
+- Ciencia de datos
+- Desarrollo web
+- Inteligencia artificial
+- Aprendizaje automático
+- Enseñanza de programación
+- Desarrollo de juegos
+- Medicina
+______________________________________________________
+2. - Idle
+This PC > Local Disk(C:) > Users > estef > AppData >
+Local > Programs > Python > Python39 > Lib > idlelib >
+idle (Python File) = Abre una consola
 
+2.1. Imprimir texto
+print("Hola mundo");
 
+2.2.- Guardar archivo: Extensión .py
+______________________________________________________
+3.- Variable: Nombre que se le asigna a un valor en el
+programa, ese nombre representa un espacio en memoria.
+Cuando se crea una variable basicamente se crea un 
+espacio en memoria donde se podra alojar o guardar un
+valor especifico, nosotros asignamos el valor a la
+variable. 
 
+Ejemplo: num = 5
+
+=   | Asignación
+5   | Valor
+num | Nombre de la variable
+------------------------
+Sintaxis: <var> = <val>
+
+<var> | Nombre de
+------------------------
+$* Idle
+>>> num = 15
+>>> num
+15
+
+3.1.- Reglas para nombrar variables
+Los nombres de variables deben empezar con una letra o
+con un guión bajo.
+Solo pueden contener caracteres alfanumericos (A-Z, a-z,
+0-9, _).
+
+Se distingue entre mayusculas y minusculas.
+Edad vs. Edad vs. EDAD
+
+Ejemplo:
+$* Idle
+>>> edad = 24
+>>> Edad = 70
+>>> EDAD = 15
+>>> edad 
+24
+______________________________________________________
+4.- Tipos de datos
+4.1.- Enteros:
+Números que no tienen decimales.
+- Positivos
+- Negativos
+- Cero 
+
+Se puede utilizar una funcion type() para obtener el
+tipo de dato numerico.
+
+>>> type(5)
+<class 'int'>
+>>> type(-15)>
+<class 'int'>
+>>> type(0)>
+<class 'int'>
+
+No hay limite para el numero maximo.
+
+4.1.1.- Números en coma flotante:
+Números que tienen decimales.
+- Positivos
+- Negativos
+
+>>> type(0.5)
+<class 'float'>
+>>> type(13.4)>
+<class 'float'>
+>>> type(4.0)>
+<class 'float'>
+
+4.1.2.- Booleanos(True|False): Los valores booleanos 
+son importantes para expresiones condicionales.
+>>> type(true)>
+<class 'bool'>
+>>> type(false)>
+<class 'bool'>
+
+4.2.- Cadenas de caracteres(String): Secuencia de
+caracteres encerrados entre comillas y usados para
+representar textor en el programa.
+
+$* idle: Ejemplo:
+>>> nombre = "Nora"
+>>> nombre
+'Nora'
+
+>>> type("Python")>
+<class 'str'>
+
+4.2.1.- Diferencias entre entero y caracteres
+>>> type(5)>
+<class 'int'>
+>>> type("5")>
+<class 'str'>
+
+4.2.2.- ¿Cuantos caracteres tiene una cadena?
+$* idle: Ejemplo:
+>>> len("A")
+1
+>>> len("Python")
+6
+
+4.2.3.- Estructura interna de la cadena
+
+Indice de la cadena de caracteres"Python"
+
+P = 0
+y = 1
+t = 2
+h = 3
+o = 4
+n = 5
+
+Para ingresar a estos caracteres se debe utilizar una
+herramienta llamada indexación(Indexing)
+
+Sintaxis: <cadena>[<índice>]
+
+>>> palabra = "Python"
+>>> palabra[0]
+'P'
+>>> palabra[1]
+'y'
+>>> palabra[2]
+'t'
+>>> palabra[3]
+'h'
+>>> palabra[4]
+'o'
+>>> palabra[5]
+'n'
+
+4.2.4.- Rebanado(Slicing): Obtener una rebanada
+(porción) de una cadena de caracteres.
+
+Sintaxis: <cadena>[inicio:fin]
+inicio: Índice que marca el inicio de la rebanada
+fin: Índice que marca el fin de la rebanada
+
+$* idle: Ejemplo:
+>>> palabra = "Python"
+>>> palabra[1:4]
+'yth'
+
+Sintaxis: <cadena>[inicio:fin:paso]
+paso: Como "saltar" de un caracter al siguiente
+
+$* idle: Ejemplo:
+>>> palabra = "Python"
+>>> palabra[1:6:2]
+'yhn'
+
+4.2.5.- Métodos de Cadena de Caracteres: Operaciones
+comunes que vienen implementadas en Python
+
+sintaxis: <cadena>.<método>(<valores>)
+
+4.2.5.1.- Capitalize: Retorna una copia de la cadena
+con el primer caracter en mayuscula y el resto en
+minuscula.
+
+sintaxis: <cadena>.capitalize()
+$* idle: Ejemplo:
+>>> palabra = "python"
+>>> palabra[1:6:2]
+'yhn'
+
+$* Métodos importantes
+- find: Encontrar caracteres
+- index: Encontrar caracteres
+- isalnum
+- isalpha
+- isdecimal
+- isdigit
+- islower
+- isupper
+- lower
+- upper
+
+4.3.- Recibiendo datos del usuario: Se utiliza la
+función input()
+
+sintaxis: <var> = input(<mensaje>)
+
+>>> num = input ("Ingreso un número: ")
+>>> print(num)
+3
+>>> type(num)
+<class 'str'>
+
+La funcion input() siempre retorna una cadena de
+caracteres.
+
+Transformar un numero string en entero:
+
+num = int(input("ingrese un Número: ")) 
+______________________________________________________
+4.4.- Operadoradores 
+
+Operador: Símbolos que denotan una operación.
+Operandos: Valores con los cuales se ejecuta la 
+operación.
+
+Operador + Operandos = Expresión
+
+Expresión: Combinación de valores, variables, y
+operadores que al ser evaluados resultan en un valor.
+
+Las expresiones se evalúan de izquierda a derecha.
+Excepto cuando ciertos operadores tienen mayor 
+"importancia" para el orden de las operaciones.
+
+Operadores:
+- Aritméticos
+- Lógicos
+- De Asignación
+- Relacionales
+
+Operadores Aritméticos: Nos permiten realizar 
+operaciones aritmética en el programa.
+- Suma
+- Resta
+- Multiplicación
+- División
+- División Entera
+- Exponente
+- Módulo
+
+4.4.1.- Operador +
+>>> 5 + 6
+11
+>>> 2 + 3
+5
+>>> 6 + 8
+14
+>>> 3.4. + 5.6
+9.0
+
+4.4.2.- Concatenar
+>>> "Hola" + " " + "Mundo"
+'Hola Mundo'
+
+4.4.3.- Operador -
+>>> 10 - 4
+6
+>>> 4 - 8
+-4
+>>> 0 - 6
+-6
+>>> 3.4. - 5.6
+-2.19999999999999997
+>>> 2 - 8.9
+-6.9
+
+4.4.4.- Operador *
+>>> 5 * 6
+30
+>>> 4 * 0
+0
+>>> -5 * -8
+40
+>>> -5 * 8
+-40
+>>> 4.5. * 7.9
+35.550000000000004
+
+4.4.5.- Operador /
+>>> 15 / 5
+3.0
+>>> 15 / 8
+1.875
+>>> 12.5 / 4
+3.125
+>>> 4 / 4.5
+0.888888888888
+>>> 4.2 / 4.1
+1.024390243902439
+
+4.4.6.- División entera
+>>> 15 // 5
+3
+>>> 3 // 5
+0
+>>> 157 // 56
+2
+>>> -4 // -6
+0
+>>> -15 // -10
+1
+
+Ejemplo entre // y /
+>>> 5.6 / 3.4
+1.670588235294117
+>>> 5.6 // 3.4
+1.0
+
+Nota: Una de las aplicaciones del operador // es en el
+algortimo de búsqueda binaria que nos permite encontrar
+un valor en una secuencia de forma muy eficiente.
+
+4.4.7.- Operador de exponenciación
+>>> 5 ** 3
+125
+>>> 3 ** 8
+6561
+>>> 2 ** 3
+8
+>>> 4.5 ** 4.7
+1175.1649090387732
+>>> 16 ** (1/2)
+4.0
+>>> 5 ** 0
+1
+
+4.4.8.- Operador módulo(%): Retorna el resto de la
+división. Es comunmente utilizado para verificar si un
+número es par o impar.
+
+>>> 5 % 2
+1
+>>> 4 % 3
+1
+>>> 16 % 4
+0
+>>> 16 % 6
+4
+>>> 18 % 4
+2
+
+4.2.9.- Determinar orden en las operaciones.
+
+1:21:14

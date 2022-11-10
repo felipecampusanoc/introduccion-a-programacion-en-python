@@ -751,7 +751,169 @@ __________________________________________________________
 www.python.org > Documentation > Python Docs
 __________________________________________________________
 __________________________________________________________
-12.- Ciclos For
+12.- Ciclos For: Estructura de control en programacion
+que permite ejecutar una o varias líneas de código 
+múltiples veces. Lo usamos cuando sabemos con antelación
+cuántas veces debemos repetir ciertas instrucciones.
 
-2:37:29
- 
+Iteración: Es una palabra importante en programación, 
+esta es una repeticion de un cierto grupo de reglas.
+
+Sintaxis: for <var> in range(<inicio>, <fin>):
+# Código
+---------------------------------------------------------
+12.1.- Variable de control: <var>
+- Variable que puede ser utilizada en el código que se va
+a repetir.
+- Se actualiza automáticamente antes de cada iteración.
+- Debe tener un nombre descriptivo.
+---------------------------------------------------------
+12.2.- Función range: Esta funcion va a retornar una 
+secuencia de valores y cada uno de esos valores va a ser
+asignado a la variable de la funcion 1 a 1.
+
+Ejemplo:
+
+>>> for i in range(4):
+	print(i)
+>>>
+0 
+1
+2
+3
+
+La funcion range retorna una sencuencia de numeros 
+enteros desde el 0 hasta el finito.
+
+La i es la variable de control que en print(i) se 
+actualiza en cada iteración.
+
+range(start, stop[, step])
+start: El valor del parámetro start(0 si no se utiliza
+el parametro)
+stop: El valor del parametro stop
+step: El valor del parametro step(1 si no se utiliza el
+parametro)
+---------------------------------------------------------
+12.3.- Ciclos sobre iterables: Un interable es un 
+elemento que retorna sus elementos 1 a la vez son datos 
+o valores o estructuras en Python que pueden retornar 
+cada uno de esos elementos 1 a la vez asi como range 
+retorna una secuencia y cada elemento de esa secuencia 
+se asigna a una variable podemos usar iterables para 
+asignar sus valores.
+
+Para iterar sobre: (iterable**)
+- Cadenas de caracteres
+- Listas
+- Tuplas
+- Diccionarios
+- Otros...
+
+En cada uno de estos elementos se va asignar a la variable
+de control, uno a la vez, uno por iteración y puedes
+utilizar ese elemento en nuestro codigo en el cuerpo del
+ciclo.
+
+Sintaxis: for <var> in <iterable**>:
+	  # Código
+
+Ejemplo:
+for char in "Loops";
+____________________
+Iteration  |  char |
+--------------------
+1	      'L'  |
+--------------------
+2	      'o'  |
+--------------------
+3	      'o'  |
+--------------------
+4	      'p'  |
+--------------------
+5	      's'  |
+--------------------
+
+Cada caracter de la cadena va a ser asignado a la 
+variable de control 1 a la vez.
+
+El primer caracter en la primera iteracion.
+El segundo caracter en la segunda iteracion.
+El tercer caracter en la tercera iteracion.
+El cuarto caracter en la cuarta iteracion.
+EL quinto caracter en la quinta iteracion.
+
+Luego de la quinta iteracion, el proceso se va a detener.
+
+
+Sintaxis para listas: for nom in [1, 2, 3]:
+		      # Code
+
+Ejemplo para listas:
+
+>>> for nom in [1, 2, 3]:
+	print(num)
+>>>
+1
+2
+3
+
+Sintaxis para diccionarios: 
+
+letras = {"a": 1, "b": 2}
+for clave in letras: 
+    print(clave) 
+
+Tambien se puede iterar sobre:
+- Claves
+- Valores
+- Pares Clave-Valor
+
+Ejemplo para diccionarios:
+>>> letras = {"a": 1, "b": 2}
+>>> for clave in letras:
+	print(clave)
+
+a
+b
+>>> for valor in letras.values():
+	print(valor)
+1
+2
+>>> for clave, valor in letras.items():
+	print(clave, valor)
+a 1
+b 2
+---------------------------------------------------------
+12.4.- Ciclos While: Ciclo que continua mientras una
+condicion es verdadera y se detiene cuando es falsa o
+se puede detener manualmente sino si esto no ocurre
+se producira un ciclo infinito.
+
+Sintaxis: while <condición>:
+	  # Código
+
+Iteraciones: Un ciclo while no tiene un número fijo o
+predeterminado de iteraciones.
+
+Variable de Control: Los ciclos while no actualizan la(s)
+variable(s) de control automaticamente.
+
+Ejemplo:
+x = 20
+
+While x < 35: 	  	---> x SEA menor a 35
+	print(x)
+	x += 3		---> Incrementar por 3
+
+>>>
+20
+23
+26
+29
+32
+__________________________________________________________
+__________________________________________________________
+13.- Funciones
+
+

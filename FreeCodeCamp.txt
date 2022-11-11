@@ -914,6 +914,113 @@ While x < 35: 	  	---> x SEA menor a 35
 32
 __________________________________________________________
 __________________________________________________________
-13.- Funciones
+13.- Función: Bloque de código reutilizable que realiza 
+una sola tarea especifica.
+
+Ventajas
+- Reusable
+- Conciso
+- Leíble
+- Mantenible
+- Comprobable
+
+Sintaxis: def <funcion>():
+	  # Código
+
+Ejemplo:
+def mostrar_mensaje():
+	print("¡Hola, Mundo!")
+---------------------------------------------------------
+13.1.- Llamar a una funcion: Ejecutar el código del 
+cuerpo de la funcion.
+
+Ejemplo:
+
+>>> def mostrar_mensaje():
+	print("¡Hola, Mundo!")
+>>> mostrar_mensaje()
+¡Hola, Mundo!
+>>> mostrar_mensaje()
+¡Hola, Mundo!
+>>> mostrar_mensaje()
+¡Hola, Mundo!
+---------------------------------------------------------
+13.2.- Parámetro: Variable que se incluye en la definicion
+de la funcion para representar y guardar un valor que
+podemos pasar cuando llamamos a la funcion.
+
+Parámetro -> Definición de la Función
+
+Sintaxis: def <funcion>(<parametro>):
+		# Código
+
+El parámetro puede ser usado en el cuerpo de la funcion
+como cualquier otra variable.
+
+Ejemplo:
+def mostrar_doble(num):
+	print(num * 2 )
+
+Varios Parámetros -> Separados por Comas
+
+Def sumar(x, y):
+	print(x + y)
+---------------------------------------------------------
+13.3.- Argumento: Valor que asignamos a un parámetro
+cuando llamamos a una función.
+
+Argumentos -> Llamada a la función
+
+Los argumentos son asginados a sus correspondientes 
+parametros.
+
+Sintaxis:
+
+Definicion de la funcion
+def sumar(x, y):
+	print(x + y)
+
+Llamada a la función
+sumar(4, 5)
+
+Ejemplo:
+>>> def sumar(x, y):
+	print(x + y)
+
+>>> sumar(4, 5)
+9
+
+Parametros -> Definicion
+Argumentos -> Llamada
+---------------------------------------------------------
+13.4.- Return: La funcion puede retornar un valor luego 
+de completar la tarea correspondiente.
+
+Sintaxis: def<funcion>(<params>):
+		return <valor>
+
+Cuando se ejecuta 'return', la ejecucion de la funcion
+se detiene inmediatamente.
+---------------------------------------------------------
+13.5.- Scope(Alcance de una Variable): Una implicacion
+importante de una funcion en python es Scope que es el
+alcance que tendra la variable en el programa. Donde se
+podra usar. Determina a que variables se tiene acceso
+en cada parte del programa.
+
+Variables global y local:
+- Scope global: Programa principal
+- Scope local: En una funcion
+
+Ejemplo:
+x = 6
+def f(y):
+	print(x + y)
+f(2)
+_________________________________________________________
+_________________________________________________________
+14.- Recursión:
+
+3:29:51
 
 

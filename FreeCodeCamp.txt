@@ -1019,8 +1019,86 @@ def f(y):
 f(2)
 _________________________________________________________
 _________________________________________________________
-14.- Recursión:
+14.- Recursión: Definir algo en terminos de si mismo.
+Se toma un problema inicial y se divide en varios 
+subproblemas que se pueden resolver de la misma forma
+para luego resolver el problema inicial completo.
 
-3:29:51
+Se ilustra el concepto de recursion con la sucesion de
+fibonacci, un ejemplp muy famoso de una sucesion 
+recursiva: 
 
+0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
+Una sucesion es simplemente una secuencia de numeros que
+siguen un patron en el caso de fibonacci cada numero.
+
+Fibonacci es el resultado de sumar los numeros anteriores
+de la secuencia, ejemplo.
+
+0, 1 = 1
+0, 1, 1 = 2
+1, 2 = 3 ...
+
+Secuencia: 0,1,1,2,3 ...
+
+14.1.- Funciones recursivas:
+- Caso Base: Permite que el proceso se detenga, el proceso
+que la funcion se llame una y otra vez.
+- Caso Recursivo: El caso recursivo es el que nos permite
+descomponer un problema en una version mas pequeña de ese
+mismo problema hasta llegar al caso base que detiene el
+proceso.
+Es como la ilustracion de una muñeca matryoshka, en el que
+cada vez hacemos un problemas mas pequeño hasta que se
+ensamblan completos hasta formar una solucion para el
+problema principal.
+
+def fibonacci(n):
+	if n == 0 or n == 1;
+		return n
+	else:
+		return fibonacci(n-1) + fibonacci(n-2)
+
+n = posicion en la sucesion (iniciando en 0)
+__________________________________________________________
+__________________________________________________________
+
+15.- Archivos: 
+
+Sentencia 'with': Nos permite abrir un archivo y luego
+cerrarlo automaticamente.
+
+Ejemplo:
+
+with open("<nombre_archivo>.txt", "r") as archivo:
+	# Trabajar con el archivo
+
+with open("frases_famosas.txt", "r") as archivo:
+	for linea in archivo:
+	print("==== Frase ====")
+	print(linea)
+
+>>> Frases
+
+15.1.- Modos de apertura de archivos: Hay diferentes modos
+de aperturas.
+
+- r (read - leer)
+- w (write - escribir)
+- a (append - añadir)
+- Agregar un + incluye leer. Por ejemplo, w+ es leer y 
+escrir.
+
+15.2.- Modificar archivos: Hay 2 formas para modificar.
+-Reemplazar contenido
+- Añadir contenido
+__________________________________________________________
+__________________________________________________________
+16.- Importaciones
+__________________________________________________________
+__________________________________________________________
+17.- Errores y excepciones
+__________________________________________________________
+__________________________________________________________
+18.- Programacion orientada a objetos
